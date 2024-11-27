@@ -1,19 +1,23 @@
 {
   "$GMObject":"",
-  "%Name":"obj_player",
+  "%Name":"obj_inimigo_slime_blue",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":8,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_player",
+  "name":"obj_inimigo_slime_blue",
   "overriddenProperties":[],
   "parent":{
-    "name":"Entidades",
-    "path":"folders/Objetos/Entidades.yy",
+    "name":"Inimigos",
+    "path":"folders/Objetos/Entidades/Inimigos.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_inimigo_pai",
+    "path":"objects/obj_inimigo_pai/obj_inimigo_pai.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -32,12 +36,12 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_player_idle_front",
-    "path":"sprites/spr_player_idle_front/spr_player_idle_front.yy",
+    "name":"spr_slime_blue_idle",
+    "path":"sprites/spr_slime_blue_idle/spr_slime_blue_idle.yy",
   },
   "spriteMaskId":{
-    "name":"spr_player_idle_front",
-    "path":"sprites/spr_player_idle_front/spr_player_idle_front.yy",
+    "name":"spr_slime_blue_idle",
+    "path":"sprites/spr_slime_blue_idle/spr_slime_blue_idle.yy",
   },
   "visible":true,
 }
