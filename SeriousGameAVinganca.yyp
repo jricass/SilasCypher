@@ -44,7 +44,8 @@
     {"$GMFolder":"","%Name":"Tiles","folderPath":"folders/Sprites/Tiles.yy","name":"Tiles","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
   "IncludedFiles":[
-    {"$GMIncludedFile":"","%Name":"videoplayback.mp4","CopyToMask":-1,"filePath":"datafiles","name":"videoplayback.mp4","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"chill_guys.MOV","CopyToMask":2891310982246695150,"filePath":"datafiles","name":"chill_guys.MOV","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"game_intro.MOV","CopyToMask":-1,"filePath":"datafiles","name":"game_intro.MOV","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
   ],
   "isEcma":false,
   "LibraryEmitters":[],
@@ -68,6 +69,7 @@
     {"id":{"name":"obj_poste_frente","path":"objects/obj_poste_frente/obj_poste_frente.yy",},},
     {"id":{"name":"Fase1","path":"rooms/Fase1/Fase1.yy",},},
     {"id":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
+    {"id":{"name":"Script2","path":"scripts/Script2/Script2.yy",},},
     {"id":{"name":"state_machine","path":"scripts/state_machine/state_machine.yy",},},
     {"id":{"name":"Sequence1","path":"sequences/Sequence1/Sequence1.yy",},},
     {"id":{"name":"spr_agua","path":"sprites/spr_agua/spr_agua.yy",},},
