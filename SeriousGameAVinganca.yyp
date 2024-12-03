@@ -44,8 +44,12 @@
     {"$GMFolder":"","%Name":"Tiles","folderPath":"folders/Sprites/Tiles.yy","name":"Tiles","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
   "IncludedFiles":[
+<<<<<<< Updated upstream
     {"$GMIncludedFile":"","%Name":"chill_guys.MOV","CopyToMask":2891310982246695150,"filePath":"datafiles","name":"chill_guys.MOV","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"game_intro.MOV","CopyToMask":-1,"filePath":"datafiles","name":"game_intro.MOV","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+=======
+    {"$GMIncludedFile":"","%Name":"chillguyproductions.MOV","CopyToMask":-1,"filePath":"datafiles","name":"chillguyproductions.MOV","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+>>>>>>> Stashed changes
   ],
   "isEcma":false,
   "LibraryEmitters":[],
