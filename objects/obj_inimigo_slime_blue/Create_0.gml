@@ -195,6 +195,8 @@ estado_hunt.inicia = function()
 	{
 		alvo = obj_player.id;	
 	}
+	
+	cria_aviso();
 }
 
 estado_hunt.roda = function()
@@ -255,6 +257,7 @@ estado_hunt.roda = function()
 }
 
 #endregion
+
 
 // Iniciando estado com as modificações
 inicia_estado(estado_idle);
