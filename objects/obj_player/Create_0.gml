@@ -1,5 +1,8 @@
 // Iniciar Variáveis
 
+meu_dano = noone;
+dano_poise = 4;
+
 // Iniciando primeiro estado
 estado_idle = new estado();
 
@@ -107,6 +110,15 @@ estado_attack.inicia = function()
 	
 	velh = 0;
 	velv = 0;
+	
+	// Criando dano
+	var _x = x + lengthdir_x(16, dir * 90);
+	var _y = y + lengthdir_y(16, dir * 90)
+	
+	meu_dano = instance_create_depth(_x, _y, depth, obj_dano_player);
+	
+	// Passando poise para o dano
+	meu_dano.dano_poise = dano_poise;
 }
 
 // Configurando estado de attaque
@@ -120,6 +132,14 @@ estado_attack.roda = function()
 		troca_estado(estado_idle);
 	}
 		
+}
+
+estado_attack.finaliza = function()
+{
+	
+	// Encerro meu dano
+	instance_destroy(meu_dano);
+	
 }
 
 #endregion

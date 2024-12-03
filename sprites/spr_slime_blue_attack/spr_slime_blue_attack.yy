@@ -39,8 +39,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"Slime",
-    "path":"folders/Sprites/Inimigos/Slime.yy",
+    "name":"Slime1",
+    "path":"folders/Sprites/Inimigos/Slime/Slime1.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
