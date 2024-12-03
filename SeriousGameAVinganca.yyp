@@ -53,6 +53,7 @@
   },
   "name":"RPGNoneClass",
   "resources":[
+    {"id":{"name":"fnt_menu","path":"fonts/fnt_menu/fnt_menu.yy",},},
     {"id":{"name":"obj_arvore","path":"objects/obj_arvore/obj_arvore.yy",},},
     {"id":{"name":"obj_colisor","path":"objects/obj_colisor/obj_colisor.yy",},},
     {"id":{"name":"obj_dano_player","path":"objects/obj_dano_player/obj_dano_player.yy",},},
