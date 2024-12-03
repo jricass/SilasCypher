@@ -1,8 +1,20 @@
 // Iniciando Variaveis padrão dos inimigos
 xscale = 1;
 dead = false;
+
+velh = 0;
+velv = 0;
+
 // Definindo equilibrio atual
 poise = poise_max;
+
+gerado = false;
+// Cria aviso
+cria_aviso = function()
+{
+	var _aviso = instance_create_depth(x, y, depth, obj_aviso);
+	_aviso.pai = id;
+}
 
 // Lidando com dano
 lida_dano = function(_dano = 1, _poise = 1)

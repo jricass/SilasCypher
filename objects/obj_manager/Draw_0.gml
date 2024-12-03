@@ -1,4 +1,4 @@
-var _videoData = video_draw() // Processa o video
+/* var _videoData = video_draw() // Processa o video
 var _videoStatus = _videoData[0]
 if (_videoStatus == 0){
 	
