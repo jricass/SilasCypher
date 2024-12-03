@@ -191,7 +191,6 @@ estado_hunt.inicia = function()
 	sprite_index = sprite.walk;
 	image_index = 0;
 	
-	image_blend = c_yellow;
 	if (instance_exists(obj_player))
 	{
 		alvo = obj_player.id;	

@@ -38,6 +38,11 @@ estado_attack.roda = function()
 		x += lengthdir_x(1, dir);
 		y += lengthdir_y(1, dir);
 	}
+	
+	if (image_index >= image_number - 0.2)
+	{
+		troca_estado(estado_idle);	
+	}
 }
 
 inicia_estado(estado_idle);
