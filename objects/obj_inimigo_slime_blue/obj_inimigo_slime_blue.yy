@@ -9,13 +9,10 @@
   ],
   "managed":true,
   "name":"obj_inimigo_slime_blue",
-  "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_inimigo_pai","path":"objects/obj_inimigo_pai/obj_inimigo_pai.yy",},"propertyId":{"name":"poise_max","path":"objects/obj_inimigo_pai/obj_inimigo_pai.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"20",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_inimigo_pai","path":"objects/obj_inimigo_pai/obj_inimigo_pai.yy",},"propertyId":{"name":"vida","path":"objects/obj_inimigo_pai/obj_inimigo_pai.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"4",},
-  ],
+  "overriddenProperties":[],
   "parent":{
-    "name":"Slimes",
-    "path":"folders/Objetos/Entidades/Inimigos/Slimes.yy",
+    "name":"Inimigos",
+    "path":"folders/Objetos/Entidades/Inimigos.yy",
   },
   "parentObjectId":{
     "name":"obj_inimigo_pai",

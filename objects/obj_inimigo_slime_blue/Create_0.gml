@@ -3,19 +3,8 @@
 
 // Criando timer para mudar de estado
 tempo_estado = game_get_speed(gamespeed_fps) * 15;
+
 timer_estado = tempo_estado;
-
-range = 10
-
-// Criando uma estrutura com as sprites dele
-sprite =
-{
-	attack : spr_slime_blue_attack,	
-	death : spr_slime_blue_death,
-	hurt : spr_slime_blue_hurt,
-	idle : spr_slime_blue_idle,	
-	walk : spr_slime_blue_walk	
-};
 
 destino_x = 0;
 destino_y = 0;
@@ -32,9 +21,8 @@ estado_hunt = new estado();
 
 estado_idle.inicia = function()
 {
-	image_blend = c_white
 	// Definir qual sprite ele usará
-	sprite_index = sprite.idle;
+	sprite_index = spr_slime_blue_idle;
 	
 	// Inicia a animação do começo
 	image_index = 0;
@@ -63,7 +51,7 @@ estado_idle.roda = function()
 
 estado_walk.inicia = function()
 {
-	sprite_index = sprite.walk;
+	sprite_index = spr_slime_blue_walk;
 	image_index = 0;
 	
 	// Resetando timer do estado
@@ -104,7 +92,7 @@ estado_walk.roda = function()
 
 estado_attack.inicia = function()
 {
-	sprite_index = sprite.attack;
+	sprite_index = spr_slime_blue_attack;
 	image_index	= 0;
 }
 
@@ -130,8 +118,11 @@ estado_attack.finaliza = function()
 
 estado_hurt.inicia = function()
 {
-	sprite_index = sprite.hurt;
+	sprite_index = spr_slime_blue_hurt;
 	image_index = 0;
+	
+	// Perco vida
+	vida--;
 }
 
 estado_hurt.roda = function()
@@ -153,24 +144,14 @@ estado_hurt.roda = function()
 	}
 }
 
-estado_hurt.finaliza = function()
-{
-	if (poise < 1)
-	{
-		poise = poise_max;	
-	}
-}
-
 #endregion
 
 #region estado_death
 
 estado_death.inicia = function()
 {
-	sprite_index = sprite.death;
+	sprite_index = spr_slime_blue_death;
 	image_index = 0;
-	
-	dead = true;
 }
 
 estado_death.roda = function()
@@ -188,9 +169,10 @@ estado_death.roda = function()
 
 estado_hunt.inicia = function()
 {
-	sprite_index = sprite.walk;
+	sprite_index = spr_slime_blue_walk;
 	image_index = 0;
 	
+	image_blend = c_yellow;
 	if (instance_exists(obj_player))
 	{
 		alvo = obj_player.id;	
@@ -212,7 +194,7 @@ estado_hunt.roda = function()
 	// Checando distancia
 	var _dist = point_distance(x, y, alvo.x, alvo.y);
 	
-	if (_dist <= range)
+	if (_dist <= 10)
 	{
 		troca_estado(estado_attack);	
 	}
